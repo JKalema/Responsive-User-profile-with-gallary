@@ -1,0 +1,805 @@
+/*deokalema@gmail.com*/
+
+
+                                    @import "https://fonts.googleapis.com/css?family=Open+Sans:300,400";
+                                    .badgescard,
+                                    .firstinfo {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                    
+                                    body {
+                                        font-family: 'Open Sans', sans-serif;
+                                        width: 100%;
+                                        font-size: 16px;
+                                        overflow: hidden;
+                                        overflow-y: scroll;
+                                        background: #013d37;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin: 0px;
+                                        padding: 0px;
+                                    }
+                                    
+                                    .content {
+                                        width: 100%;
+                                        position: relative;
+                                        animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
+                                        overflow: hidden;
+                                    }
+                                    
+                                    .card {
+                                        max-width: 1000px;
+                                        min-height: 100px;
+                                        padding: 5px 15px;
+                                        border-radius: 3px;
+                                        background-color: white;
+                                        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.212);
+                                        position: relative;
+                                        overflow: hidden;
+                                    }
+                                    
+                                    .card:after {
+                                        content: '';
+                                        display: block;
+                                        width: 350px;
+                                        height: 400px;
+                                        background-image: linear-gradient(to bottom, red, blue);
+                                        position: absolute;
+                                        animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
+                                        overflow: hidden;
+                                        overflow-x: hidden;
+                                        overflow-y: auto;
+                                    }
+                                    
+                                    .badgescard {
+                                        display: flex;
+                                        margin: 0;
+                                        padding: 5px 15px;
+                                        background-color: rgba(255, 255, 255, 0.849);
+                                        max-width: 1000px;
+                                        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+                                        position: relative;
+                                        z-index: -1;
+                                        top: 0px;
+                                        animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
+                                    }
+                                    
+                                    .firstinfo {
+                                        flex-direction: row;
+                                        z-index: 2;
+                                        position: relative;
+                                    }
+                                    
+                                    .firstinfo img {
+                                        border-radius: 50%;
+                                        width: 120px;
+                                        height: 120px;
+                                        background: #5A5A5A;
+                                        margin-left: -200px;
+                                        border: 5px solid #f0f0f0;
+                                    }
+                                    
+                                    .firstinfo .profileinfo {
+                                        padding: 0px 20px;
+                                    }
+                                    
+                                    .firstinfo .profileinfo h1 {
+                                        font-size: 1.8em;
+                                    }
+                                    
+                                    .firstinfo .profileinfo h3 {
+                                        font-size: 1.2em;
+                                        color: #009688;
+                                        font-weight: 100;
+                                    }
+                                    
+                                    .firstinfo .profileinfo p.bio {
+                                        padding: 10px 0px;
+                                        color: #5A5A5A;
+                                        line-height: 1.2;
+                                        font-style: initial;
+                                    }
+                                    
+                                    .content .fa {
+                                        color: rgb(0, 26, 255);
+                                        margin: auto 10px auto;
+                                    }
+                                    
+                                    .about_links {
+                                        width: 445px;
+                                        top: 0;
+                                        right: auto;
+                                        position: relative;
+                                        text-align: left;
+                                    }
+                                    
+                                    .about_links li {
+                                        list-style: none;
+                                        font-size: 11px;
+                                        color: #5A5A5A;
+                                    }
+                                    
+                                    .about_links li a {
+                                        text-decoration: none;
+                                        color: rgb(255, 0, 0);
+                                        font-size: 14px;
+                                        margin: auto 10px auto;
+                                    }
+                                    
+                                    .about_links h4 {
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                        color: #5A5A5A;
+                                        font-size: 18px;
+                                        margin-left: 30px;
+                                    }
+                                    
+                                    .about_links_two {
+                                        width: 443px;
+                                        height: 200px;
+                                        right: 0px;
+                                        top: 10px;
+                                        left: auto;
+                                        display: grid;
+                                        grid-template: 100px / auto auto auto;
+                                        grid-gap: 5px;
+                                        padding: 5px;
+                                    }
+                                    
+                                    .about_links_two>div {
+                                        align-content: center;
+                                        background-color: rgba(255, 255, 255, 0.8);
+                                        text-align: center;
+                                        padding: 30px 0px 0px;
+                                        border-radius: 4px;
+                                    }
+                                    
+                                    .about_links_two>div p {
+                                        padding: 0px;
+                                        font-size: 9px;
+                                        background: red;
+                                        color: #ECECEC;
+                                        width: 25px;
+                                        height: 15px;
+                                        font-weight: 500;
+                                        border-radius: 10px;
+                                        transform: translateY(-450%);
+                                        right: 50%;
+                                        margin-left: 50%;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .about_links_two>div .completed {
+                                        background: rgb(133, 221, 0);
+                                    }
+                                    
+                                    .about_links_two>div a {
+                                        margin: 15px auto auto;
+                                        text-decoration: none;
+                                        font-size: 14px;
+                                        padding: 0px;
+                                    }
+                                    
+                                    .about_links_two>div a i {
+                                        font-size: 32px;
+                                        padding: 0px;
+                                        margin: 15px auto auto;
+                                    }
+                                    /*pics only*/
+                                    
+                                    .cast_casto_pics {
+                                        width: 100%;
+                                        height: 100%;
+                                        margin: 0px;
+                                        padding: 0px;
+                                    }
+                                    
+                                    .cust-container {
+                                        max-width: 1000px;
+                                        margin: 0 auto;
+                                        padding: 15px 15px 20px;
+                                        background: #ECECEC;
+                                        border-top: 1px solid #009688;
+                                    }
+                                    
+                                    .gallary {
+                                        display: grid;
+                                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                                        grid-column-gap: 15px;
+                                        grid-row-gap: 15px;
+                                    }
+                                    
+                                    .gallary img {
+                                        width: 100%;
+                                        border-radius: 4px;
+                                        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.267);
+                                    }
+                                    
+                                    .gallary img:hover {
+                                        transform: scale(1.1);
+                                        transition: all 1s;
+                                        border: 1px solid #ECECEC;
+                                    }
+                                    
+                                    .cust-container p {
+                                        background: #ECECEC;
+                                        color: #525252;
+                                        height: 20px;
+                                        width: 100%;
+                                        padding: 15px 0px;
+                                        font-size: large;
+                                        font-family: 'Lucida Sans';
+                                        border: 1px dotted #929292;
+                                    }
+                                    
+                                    .remaining-p {
+                                        position: absolute;
+                                        height: fit-content;
+                                        width: fit-content;
+                                        padding: 0px;
+                                        margin: 0px;
+                                        right: 2px;
+                                        left: auto;
+                                        bottom: 0px;
+                                        color: rgba(90, 90, 90, 0.253);
+                                        justify-content: space-around;
+                                    }
+                                    
+                                    .remaining-p p {
+                                        height: 20px;
+                                        align-items: center;
+                                        color: rgba(90, 90, 90, 0.253);
+                                        margin: 0px;
+                                    }
+                                    
+                                    .remaining-p ul {
+                                        list-style: none;
+                                        margin: 0px;
+                                        width: 100%;
+                                        height: 80%;
+                                    }
+                                    
+                                    .remaining-p ul li {
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+                                        color: rgba(90, 90, 90, 0.253);
+                                        font-size: 18px;
+                                        margin: 0px 10px 0px;
+                                        text-decoration: none;
+                                        width: 151px;
+                                    }
+                                    
+                                    .remaining-p ul li a {
+                                        text-decoration: none;
+                                        font-family: 'Orbitron', sans-serif;
+                                        margin: 0px 5px 0px;
+                                        color: rgba(90, 90, 90, 0.253);
+                                    }
+                                    
+                                    .remaining-p p .fa {
+                                        color: rgba(90, 90, 90, 0.253);
+                                        font-size: 22px;
+                                    }
+                                    
+                                    p.dbarner {
+                                        transform: skewY(45deg);
+                                        padding: 20px;
+                                        height: 150px;
+                                        width: 250px;
+                                        background: rgb(202, 2, 252);
+                                        position: absolute;
+                                        top: -100px;
+                                        right: -60px;
+                                        left: auto;
+                                    }
+                                    
+                                    fieldset {
+                                        border: 1px solid rgb(202, 2, 252);
+                                        text-align: center;
+                                        margin: 0px;
+                                        padding: 0px;
+                                        border-radius: 4px;
+                                    }
+                                    
+                                    fieldset li {
+                                        margin: 4px;
+                                        text-align: start;
+                                    }
+                                    
+                                    fieldset legend {
+                                        border: 1px solid rgb(202, 2, 252);
+                                    }
+                                    /*key frames for the starting animation "I LOVE ANIMATIONS @DEO_KALEMA"*/
+                                    
+                                    .footer {
+                                        width: 100%;
+                                        min-height: 300px;
+                                        margin-top: 0;
+                                        width: 100%;
+                                        align-content: center;
+                                        position: relative;
+                                        background: #013d37;
+                                    }
+                                    
+                                    .f-foo {
+                                        position: relative;
+                                        clear: both;
+                                        margin: 0 auto;
+                                        padding: 0;
+                                        width: 100%;
+                                        list-style: none;
+                                        text-align: center;
+                                    }
+                                    
+                                    .f-foo ul {
+                                        color: aliceblue;
+                                        overflow: hidden;
+                                        text-align: center;
+                                        cursor: pointer;
+                                        background: transparent;
+                                        border-radius: 2px;
+                                        display: inline-block;
+                                        height: fit-content;
+                                        margin: .8rem;
+                                        position: relative;
+                                        width: 200px;
+                                        min-width: 100px;
+                                        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                                    }
+                                    
+                                    .mapper12 form {
+                                        overflow: hidden;
+                                        text-align: center;
+                                        cursor: pointer;
+                                        background: transparent;
+                                        border-radius: 2px;
+                                        display: inline-block;
+                                        height: 45px;
+                                        margin: .8rem;
+                                        position: relative;
+                                        width: 80%;
+                                        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                                    }
+                                    
+                                    .mapper12 form input:nth-child(1) {
+                                        height: 40px;
+                                        background: transparent;
+                                        text-align: center;
+                                        width: 55%;
+                                        border: 1px solid #8ba1a5;
+                                        border-radius: 4px;
+                                    }
+                                    
+                                    .mapper12 form input:nth-child(2) {
+                                        height: 40px;
+                                        background: transparent;
+                                        width: 15%;
+                                        border: 1px solid #8ba1a5;
+                                        border-radius: 4px;
+                                        font-size: medium;
+                                        font-weight: lighter;
+                                        color: #8ba1a5;
+                                        font-family: cursive;
+                                        font-size: 12px;
+                                    }
+                                    
+                                    .footer p,
+                                    .footer h2 {
+                                        color: #ffffff;
+                                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                        padding: 0;
+                                    }
+                                    
+                                    .footer p {
+                                        font-size: 10px;
+                                        text-transform: uppercase;
+                                        color: rgb(255, 255, 255);
+                                    }
+                                    
+                                    .footer h2 {
+                                        color: rgb(216, 220, 245);
+                                        font-size: 12px;
+                                        font-family: 'Exo', sans-serif;
+                                    }
+                                    
+                                    .footer .f-foo ul {
+                                        background: transparent;
+                                        text-align: start;
+                                    }
+                                    
+                                    .footer .f-foo ul li {
+                                        list-style: none;
+                                        height: 20px;
+                                        font-size: x-small;
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                    }
+                                    
+                                    .footer .f-foo ul li:hover a {
+                                        text-underline-position: below;
+                                        text-decoration: underline;
+                                    }
+                                    
+                                    footer ul li a {
+                                        text-decoration: none;
+                                        color: rgb(255, 255, 255);
+                                        font-weight: 10;
+                                        font-size: 12px;
+                                        margin-top: 20px;
+                                    }
+                                    
+                                    .mapper12 .contac {
+                                        overflow: hidden;
+                                        text-align: center;
+                                        cursor: pointer;
+                                        background: transparent;
+                                        border-radius: 2px;
+                                        display: inline-block;
+                                        height: 70px;
+                                        margin: .8rem;
+                                        position: relative;
+                                        width: 280px;
+                                        ;
+                                        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                                    }
+                                    
+                                    .mapper12 .contac .fa {
+                                        color: aliceblue;
+                                        margin: 5px;
+                                        font-size: 18px;
+                                    }
+                                    
+                                    .mapper12 .contac .fa:hover {
+                                        color: #00ff15b7;
+                                    }
+                                    /*line between*/
+                                    
+                                    .liner {
+                                        height: 1.5px;
+                                        width: 100%;
+                                        background: #575553;
+                                        font-size: 22px;
+                                        text-decoration: dotted;
+                                    }
+                                    /*below the line between*/
+                                    
+                                    .onliner {
+                                        font-family: cursive!important;
+                                        width: 100%;
+                                        font-size: 12px!important;
+                                    }
+                                    
+                                    .favourites {
+                                        padding: 0;
+                                        border-bottom: 1px dotted #999999;
+                                        margin: 0;
+                                        top: 0;
+                                        width: 100%;
+                                        height: fit-content;
+                                        background: #013d37;
+                                        display: flex;
+                                        float: left;
+                                        text-align: center;
+                                        align-content: center;
+                                        -moz-box-shadow: 5px 0 0 rgba(0, 0, 0, 0.904), 0 1px 0 rgba(255, 255, 255, 0.616) inset;
+                                        -webkit-box-shadow: 5px 0 0 rgba(0, 0, 0, 0.747), 0 1px 0 rgba(80, 46, 46, 0.534) inset;
+                                        box-shadow: 5px 0 0 rgba(0, 0, 0, 0.836), 0 1px 0 rgba(255, 255, 255, 0.596) inset;
+                                    }
+                                    
+                                    .favourites:nth-child(1) li:hover a {
+                                        color: #e3e3f0;
+                                    }
+                                    
+                                    .favourites li {
+                                        font-weight: bold;
+                                        list-style: none;
+                                        padding: 5px;
+                                        width: 20%;
+                                    }
+                                    
+                                    .favourites li a {
+                                        padding: 0 0 10px;
+                                        text-decoration: none;
+                                        color: #929292;
+                                        font-size: small;
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+                                    }
+                                    
+                                    .favourites li:hover a i {
+                                        color: #ffffff;
+                                    }
+                                    
+                                    .favourites li:hover a {
+                                        color: #ff5e00;
+                                    }
+                                    
+                                    .favourites li a i {
+                                        padding: 3px;
+                                        font-size: 16px;
+                                        font-weight: bolder;
+                                    }
+                                    
+                                    @keyframes animatop {
+                                        0% {
+                                            opacity: 0;
+                                            bottom: -500px;
+                                        }
+                                        100% {
+                                            opacity: 1;
+                                            bottom: 0px;
+                                        }
+                                    }
+                                    
+                                    @keyframes animainfos {
+                                        0% {
+                                            bottom: 10px;
+                                        }
+                                        100% {
+                                            bottom: -42px;
+                                        }
+                                    }
+                                    
+                                    @keyframes rotatemagic {
+                                        0% {
+                                            opacity: 0;
+                                            transform: rotate(0deg);
+                                            top: -24px;
+                                            left: -253px;
+                                        }
+                                        100% {
+                                            transform: rotate(-30deg);
+                                            top: -24px;
+                                            left: -78px;
+                                        }
+                                    }
+                                    
+                                    .bottom_menu {
+                                        display: none;
+                                    }
+                                    
+                                    @media (max-width: 768px) {
+                                        body,
+                                        .card {
+                                            overflow-x: hidden!important;
+                                        }
+                                        .card {
+                                            background: rgb(202, 2, 252);
+                                        }
+                                        .footer .f-foo ul {
+                                            background: transparent;
+                                            text-align: start;
+                                            width: fit-content!important;
+                                        }
+                                        .firstinfo img {
+                                            border-radius: 1px;
+                                            width: 50%;
+                                            height: 100%;
+                                            background: #5A5A5A;
+                                            margin: 0px;
+                                            padding: 0px;
+                                            top: 0px;
+                                            left: -10px;
+                                            right: auto;
+                                            position: absolute;
+                                            border: none;
+                                        }
+                                        /*######################################################################################################*/
+                                       
+                                       this file is made with love by the Jjam tech team 
+                                       
+                                       
+                                       /*##############################################################################################*/
+                                        .card:after {
+                                            display: none;
+                                        }
+                                        .firstinfo {
+                                            flex-direction: row;
+                                            z-index: 2;
+                                            position: relative;
+                                        }
+                                        .firstinfo .profileinfo {
+                                            padding: 0px 0px;
+                                            height: fit-content;
+                                        }
+                                        .firstinfo .profileinfo h1 {
+                                            z-index: 2;
+                                            font-size: 1em;
+                                            color: #fbff00;
+                                            line-height: 1;
+                                            transform: translateX(50%);
+                                        }
+                                        .firstinfo .profileinfo h3 {
+                                            font-size: 1em;
+                                            color: #ffffff;
+                                            font-weight: 100;
+                                            transform: translateX(50%);
+                                        }
+                                        .firstinfo .profileinfo p.bio {
+                                            padding: 10px 0px;
+                                            color: rgb(255, 255, 255);
+                                            font-style: initial;
+                                            transform: translateX(50%);
+                                        }
+                                        .content .profileinfo .fa {
+                                            color: rgb(255, 255, 255);
+                                            margin: auto 10px auto;
+                                        }
+                                        @media (max-width: 600px) {
+                                            .about_links li a {
+                                                font-size: 12px;
+                                            }
+                                            .badgescard {
+                                                display: block;
+                                                margin: 0;
+                                                padding: 5px 15px;
+                                                background-color: rgba(255, 255, 255, 0.849);
+                                                max-width: 1000px;
+                                                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+                                                position: relative;
+                                                z-index: -1;
+                                                top: 0px;
+                                                height: fit-content;
+                                                animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
+                                            }
+                                            .mapper12 form input:nth-child(1) {
+                                                width: 50%;
+                                            }
+                                            .mapper12 form input:nth-child(2) {
+                                                width: 25%;
+                                            }
+                                            .about_links {
+                                                min-height: 200px;
+                                                top: 0;
+                                                right: auto;
+                                                position: relative;
+                                                text-align: left;
+                                                width: 100%;
+                                            }
+                                            .about_links_two {
+                                                width: 100%;
+                                                min-height: 200px;
+                                                right: auto;
+                                                top: 10px;
+                                                left: auto;
+                                                display: grid;
+                                                grid-template: 100px / auto auto auto;
+                                                grid-gap: 5px;
+                                                padding: 5px;
+                                            }
+                                            @media screen and (max-width:489px) {
+                                                .bottom_menu {
+                                                    display: block;
+                                                    border: none;
+                                                    border-top: .7px solid #000000;
+                                                    border-bottom: .6px solid #e0dfdf;
+                                                    width: 100%;
+                                                    z-index: 1000001;
+                                                    background: #fff;
+                                                    margin: 0px;
+                                                    bottom: 0px;
+                                                    padding: 0;
+                                                    left: 0px;
+                                                    position: fixed;
+                                                    height: 45px;
+                                                    border-top: 1px solid rgba(250, 250, 250, 0.507);
+                                                }
+                                                .bottom_menu span {
+                                                    width: 19%;
+                                                    height: 100%;
+                                                    background: rgb(255, 254, 254);
+                                                    display: flex;
+                                                    justify-content: space-around;
+                                                    float: left;
+                                                    margin: 0px;
+                                                    border-left: 1px solid rgba(255, 255, 255, 0.507);
+                                                    border-right: 1px solid rgba(255, 255, 255, 0.767);
+                                                    text-align: center;
+                                                }
+                                                .bottom_menu a span {
+                                                    font-size: 10px;
+                                                    color: rgb(87, 87, 87);
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    text-decoration: none;
+                                                }
+                                                .bottom_menu a span i {
+                                                    font-size: 22px;
+                                                }
+                                                .bottom_menu a span:active i,
+                                                .bottom_menu a span:hover i,
+                                                .bottom_menu a span:focus i,
+                                                .bottom_menu a span:focus,
+                                                .bottom_menu a span:active,
+                                                .bottom_menu a span:hover {
+                                                    color: red;
+                                                }
+                                            }
+                                            @media (max-width: 343px) {
+                                                .about_links li a {
+                                                    text-decoration: none;
+                                                    color: rgb(131, 2, 2);
+                                                    font-size: 10px;
+                                                }
+                                                .firstinfo .profileinfo h1 {
+                                                    z-index: 2;
+                                                    font-size: small;
+                                                    color: #fbff00;
+                                                    line-height: 1;
+                                                    transform: translateX(50%);
+                                                }
+                                                .firstinfo .profileinfo h3 {
+                                                    font-size: small;
+                                                    color: #ffffff;
+                                                    font-weight: 100;
+                                                    transform: translateX(50%);
+                                                }
+                                                .firstinfo .profileinfo p.bio {
+                                                    padding: 10px 0px;
+                                                    color: rgb(255, 255, 255);
+                                                    font-style: initial;
+                                                    transform: translateX(50%);
+                                                    font-size: small;
+                                                }
+                                                .content .profileinfo .fa {
+                                                    color: rgb(255, 255, 255);
+                                                    margin: auto 10px auto;
+                                                }
+                                                @media (max-width: 315px) {
+                                                    .about_links_two {
+                                                        font-size: 9px;
+                                                        height: fit-content;
+                                                        padding: 10px 0px 0px;
+                                                        display: flex;
+                                                        overflow: auto;
+                                                    }
+                                                    .about_links_two>div {
+                                                        width: 200px!important;
+                                                        height: 100px;
+                                                        margin: 0px 5px auto;
+                                                    }
+                                                    .favourites,
+                                                    .footer {
+                                                        display: none;
+                                                    }
+                                                    @media (max-width:280px) {
+                                                        .firstinfo img {
+                                                            border-radius: 1px;
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            background: #5A5A5A;
+                                                            margin: 0px;
+                                                            padding: 0px;
+                                                            top: 0px;
+                                                            left: 0px;
+                                                            right: auto;
+                                                            position: absolute;
+                                                            border: none;
+                                                        }
+                                                        .firstinfo .profileinfo h1 {
+                                                            font-size: 10px!important;
+                                                            color: #0011ff;
+                                                            line-height: 1;
+                                                            transform: translateX(0%);
+                                                        }
+                                                        .firstinfo .profileinfo h3 {
+                                                            font-size: 10px!important;
+                                                            color: #ff0000;
+                                                            font-weight: 900;
+                                                            transform: translateX(0%);
+                                                        }
+                                                        .firstinfo .profileinfo p.bio {
+                                                            padding: 10px 0px;
+                                                            color: rgb(255, 0, 0);
+                                                            font-style: initial;
+                                                            transform: translateX(0%);
+                                                            font-size: 10px!important;
+                                                            font-weight: 900;
+                                                        }
+                                                        .card {
+                                                            background: rgb(255, 187, 0);
+                                                            border-radius: 0px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
